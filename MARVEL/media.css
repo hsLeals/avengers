@@ -1,0 +1,248 @@
+@media(max-width: 1450px) {
+
+    .foot span::after {
+        width: 270px;
+    }
+
+    nav img,
+    .filmposters {
+        display: none !important;
+    }
+
+    #avengers .left,
+    #captainamerica .left,
+    #hulk .left,
+    #hawkeye .left {
+        width: 55% !important;
+    }
+
+    #ironman .right,
+    #thor .right,
+    #blackwidow .right {
+        width: 55% !important;
+    }
+    .button {
+        display: none;
+    }
+}
+
+@media(max-width: 1450px) {
+    .film {
+        left: calc(50% - 575px);
+    }
+
+}
+
+@media(max-width: 1300px) {
+   
+
+    #avengers .left,
+    #captainamerica .left,
+    #hulk .left,
+    #hawkeye .left {
+        width: 50% !important;
+    }
+
+    #ironman .right,
+    #thor .right,
+    #blackwidow .right {
+        width: 50% !important;
+    }
+
+    .left,
+    .right {
+        animation: none !important;
+    }
+}
+
+
+@media(max-width: 1159.5px) {
+    .film {
+        left: calc(50% - 430px);
+    }
+
+}
+
+@media(max-width: 1140px) {
+
+    #avengers .left p,
+    #captainamerica .left p,
+    #hulk .left p,
+    #hawkeye .left p,
+    #ironman .right p,
+    #thor .right p,
+    #blackwidow .right p {
+        overflow-y: scroll;
+    }
+
+    #avengers .left,
+    #captainamerica .left,
+    #hulk .left,
+    #hawkeye .left {
+        width: 45% !important;
+    }
+
+    #ironman .right,
+    #thor .right,
+    #blackwidow .right {
+        width: 45% !important;
+    }
+}
+
+@media(max-width: 1024px) {
+
+    #avengers .left,
+    #captainamerica .left,
+    #hulk .left,
+    #hawkeye .left {
+        width: 35% !important;
+    }
+
+    #ironman .right,
+    #thor .right,
+    #blackwidow .right {
+        width: 35% !important;
+    }
+
+    .item img {
+        width: 90%;
+    }
+}
+
+
+@media(max-width: 870px) {
+    .film {
+        left: calc(50% - 285px);
+    }
+
+}
+
+@media(max-width: 870px) {
+
+    #avengers .left,
+    #captainamerica .left,
+    #hulk .left,
+    #hawkeye .left {
+        width: 25% !important;
+    }
+
+    #ironman .right,
+    #thor .right,
+    #blackwidow .right {
+        width: 25% !important;
+    }
+}
+
+@media(max-width: 870px) {
+
+    #avengers .left,
+    #captainamerica .left,
+    #hulk .left,
+    #hawkeye .left {
+        width: 25% !important;
+    }
+
+    #ironman .right,
+    #thor .right,
+    #blackwidow .right {
+        width: 25% !important;
+    }
+}
+
+@media(max-width: 786px) {
+
+    #avengers .left,
+    #captainamerica .left,
+    #hulk .left,
+    #hawkeye .left {
+        display: none;
+    }
+
+    #ironman .right,
+    #thor .right,
+    #blackwidow .right {
+        display: none;
+    }
+
+    #avengers .right,
+    #captainamerica .right,
+    #hulk .right,
+    #hawkeye .right {
+        right: calc(50% - 220px);
+    }
+
+    #ironman .left,
+    #thor .left,
+    #blackwidow .left {
+        left: calc(50% - 220px);
+    }
+
+    #avengers img:hover,
+    #ironman img:hover,
+    #captainamerica img:hover,
+    #hulk img:hover,
+    #hawkeye img:hover,
+    #blackwidow img:hover,
+    #thor img:hover {
+        opacity: 0;
+        transition: 0.3s;
+    }
+}
+
+@media(max-width: 678px) {
+    .films {
+        font-size: 15px;
+    }
+
+    nav {
+        font-size: 12px;
+    }
+
+    .foot::after,
+    .foot::before {
+        display: none;
+    }
+}
+
+@media(max-width: 579.5px) {
+    .film {
+        left: calc(50% - 145px);
+    }
+
+}
+
+@media(max-width: 460px) {
+
+    .head {
+        height: 35px;
+    }
+
+    .films {
+        font-size: 13px;
+    }
+
+    .films i {
+        display: none;
+    }
+
+    nav {
+        font-size: 10px;
+    }
+
+    .sign {
+        font-size: 13px;
+        right: 13px;
+        width: 100px;
+    }
+
+    .right,
+    .left {
+        width: 300px !important;
+        left: calc(50% - 150px) !important;
+    }
+
+    .right p,
+    .left p {
+        font-size: 12px !important;
+    }
+}

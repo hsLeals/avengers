@@ -1,0 +1,893 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+}
+::selection{
+    background-color: red;
+    color: gold;
+}
+
+/* head***************************************************************************************************************** */
+.head {
+    width: 100%;
+    background-color: #111;
+    position: relative;
+}
+
+.item {
+    width: 20%;
+    margin: auto;
+}
+
+.item img {
+    margin: auto;
+    display: block;
+    width: 60%;
+}
+
+a {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    text-decoration: none;
+    color: red;
+    z-index: 0;
+}
+
+.films {
+    color: red;
+    position: absolute;
+    font-size: 25px;
+    top: 25%;
+    left: 50px;
+}
+
+.films::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background-color: red;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s linear;
+}
+
+.films i {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.sign {
+    position: absolute;
+    height: 50%;
+    width: 130px;
+    top: 25%;
+    right: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    align-items: center;
+    padding: 10px;
+}
+
+.sign a::after,
+.sign a::before {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+.sign a:nth-child(1)::after {
+    width: 0%;
+    height: 1px;
+    background-color: rgba(224, 191, 6, 0.704);
+    bottom: 0;
+    left: 0;
+    transition: 0.3s linear;
+}
+
+.sign a:nth-child(1)::before {
+    width: 0;
+    height: 1px;
+    background-color: rgba(224, 191, 6, 0.704);
+    top: 0;
+    right: 0;
+    transition: 0.3s linear;
+}
+
+.sign a:nth-child(2)::after {
+    height: 0%;
+    width: 1px;
+    background-color: rgba(224, 191, 6, 0.704);
+    bottom: 0;
+    left: 0;
+    transition: 0.3s linear;
+    transition-delay: 0s;
+}
+
+.sign a:nth-child(2)::before {
+    height: 0%;
+    width: 1px;
+    background-color: rgba(224, 191, 6, 0.704);
+    top: 0;
+    right: 0;
+    transition: 0.3s linear;
+    transition-delay: 0s !important;
+}
+
+.sign::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 40%;
+    width: 1px;
+    background-color: rgb(255, 240, 240);
+    top: 30%;
+    right: 45%;
+}
+
+.sign::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: gold;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s linear;
+    transition-delay: 0.3s;
+    z-index: 0;
+}
+
+
+.films:hover::before {
+    width: 100%;
+}
+
+.sign:hover.sign::before {
+    height: 100%;
+    transition-delay: 0.5s;
+}
+
+.sign:hover.sign a:nth-child(1)::after {
+    width: 100%;
+}
+
+.sign:hover.sign a:nth-child(1)::before {
+    width: 100%;
+}
+
+.sign:hover.sign a:nth-child(2)::after {
+    height: 100%;
+    transition-delay: 0.2s;
+}
+
+.sign:hover.sign a:nth-child(2)::before {
+    height: 100%;
+    transition-delay: 0.2s !important;
+}
+
+/* nav***************************************************************************************************************** */
+
+nav {
+    background-color: gold;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+nav a:nth-child(1) {
+    width: 5%;
+}
+
+nav a:nth-child(2) {
+    width: 9%;
+}
+
+nav a:nth-child(3) {
+    width: 4%;
+}
+
+nav a:nth-child(4) {
+    width: 4%;
+}
+
+nav a:nth-child(5) {
+    width: 7%;
+}
+
+nav a:nth-child(6) {
+    width: 6%;
+}
+
+
+
+
+
+
+nav a:nth-child(1) img {
+    width: 12%;
+}
+
+nav a:nth-child(2) img {
+    width: 14%;
+}
+
+nav a:nth-child(3) img {
+    width: 27%;
+}
+
+nav a:nth-child(4) img {
+    width: 25%;
+}
+
+nav a:nth-child(5) img {
+    width: 14%;
+}
+
+nav a:nth-child(6) img {
+    width: 15%;
+}
+
+/* slide***************************************************************************************************************** */
+
+swiper-container {
+    width: 99%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* AVENGERS***************************************************************************************************************** */
+#avengers .left p,
+#captainamerica .left p,
+#hulk .left p,
+#hawkeye .left p,
+#ironman .right p,
+#thor .right p,
+#blackwidow .right p {
+    height: 440px;
+}
+
+#avengers {
+    position: relative;
+    overflow: hidden;
+    transition: 0.1s;
+}
+
+#avengers h1 {
+    color: #fff;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 50px;
+    width: 210px;
+}
+
+#avengers .left p {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Marvel', sans-serif;
+    margin-top: 15px;
+    line-height: 43px;
+}
+
+#avengers .left {
+    width: 60%;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    animation-duration: 1.3s;
+}
+
+#avengers .right {
+    position: absolute;
+    width: 440px;
+    top: 150px;
+    right: 80px;
+    animation-duration: 1.3s;
+}
+
+#avengers .right p{
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Marvel', sans-serif;
+    margin-top: 15px;
+    line-height: 43px;
+    z-index: -1;
+    text-align: center;
+    position: relative;
+}
+
+
+#avengers .right img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 1.25rem;
+    z-index: 0;
+}
+
+#avengers button {
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+#avengers::after,
+#avengers::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 95%;
+    height: 1px;
+    background-color: #888;
+    left: 2.5%;
+}
+
+#avengers::after {
+    top: 50px;
+}
+
+#avengers::before {
+    bottom: 30px;
+}
+
+
+/* IRONMAN***************************************************************************************************************** */
+#ironman {
+    position: relative;
+    transition: 0.1s;
+    overflow: hidden;
+}
+
+#ironman h1 {
+    color: #fff;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 50px;
+    margin-right: 30px;
+    text-align: end;
+}
+
+#ironman .right p {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Marvel', sans-serif;
+    margin-top: 15px;
+    line-height: 43px;
+    text-align: end;
+}
+
+#ironman .right {
+    width: 60%;
+    position: absolute;
+    right: 60px;
+    animation-duration: 1.3s;
+}
+
+#ironman .left {
+    position: relative;
+    width: 440px;
+    top: 50px;
+    left: 80px;
+    animation-duration: 1.3s;
+}
+
+#ironman .left p{
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Marvel', sans-serif;
+    margin-top: 15px;
+    line-height: 43px;
+    text-align: center;
+}
+
+#ironman .left img {
+    width: 100%;
+    border-radius: 1.25rem;
+    position: absolute;
+    top: 0;
+}
+
+#ironman button {
+    margin-left: 700px;
+    margin-top: 70px;
+}
+
+#ironman::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 95%;
+    height: 1px;
+    background-color: #888;
+    bottom: 30px;
+    left: 2.5%;
+}
+
+
+/* CAPTAIN***************************************************************************************************************** */
+#captainamerica {
+    position: relative;
+    transition: 0.1s;
+    overflow: hidden;
+}
+
+#captainamerica h1 {
+    color: #fff;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 50px;
+}
+
+#captainamerica .right p{
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Marvel', sans-serif;
+    margin-top: 15px;
+    line-height: 43px;
+    z-index: -1;
+    text-align: center;
+    position: relative;
+}
+
+#captainamerica .left p {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Marvel', sans-serif;
+    margin-top: 15px;
+    line-height: 43px;
+}
+
+#captainamerica .left {
+    width: 60%;
+    position: absolute;
+    left: 60px;
+    animation-duration: 1.3s;
+}
+
+#captainamerica .right {
+    position: absolute;
+    width: 440px;
+    top: 50px;
+    right: 80px;
+    animation-duration: 1.3s;
+
+}
+
+#captainamerica .right img {
+    width: 100%;
+    border-radius: 1.25rem;
+    position: absolute;
+    top: 0;
+}
+
+#captainamerica button {
+    margin-left: 20px;
+    margin-top: 150px;
+}
+
+#captainamerica::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 95%;
+    height: 1px;
+    background-color: #888;
+    left: 2.5%;
+}
+
+#captainamerica::before {
+    bottom: 20px;
+}
+
+
+
+/* THOR***************************************************************************************************************** */
+#thor {
+    position: relative;
+    overflow: hidden;
+    transition: 0.1s;
+}
+
+#thor h1 {
+    color: #fff;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 50px;
+    margin-right: 30px;
+    text-align: end;
+}
+
+#thor .right p {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Marvel', sans-serif;
+    margin-top: 15px;
+    line-height: 43px;
+    text-align: end;
+}
+
+#thor .right {
+    width: 60%;
+    position: absolute;
+    right: 60px;
+    animation-duration: 1.3s;
+}
+
+#thor .left {
+    position: absolute;
+    width: 440px;
+    top: 50px;
+    left: 80px;
+
+    animation-duration: 1.3s;
+}
+
+#thor .left p {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Marvel', sans-serif;
+    margin-top: 15px;
+    line-height: 43px;
+    text-align: center;
+}
+
+#thor .left img {
+    width: 100%;
+    border-radius: 1.25rem;
+    position: absolute;
+    top: 0;
+}
+
+#thor button {
+    margin-left: 700px;
+    margin-top: 150px;
+}
+
+#thor::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 95%;
+    height: 1px;
+    background-color: #888;
+    bottom: 30px;
+    left: 2.5%;
+}
+
+
+/* HULK***************************************************************************************************************** */
+#hulk {
+    position: relative;
+    overflow: hidden;
+    transition: 0.1s;
+}
+
+#hulk h1 {
+    color: #fff;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 50px;
+}
+
+#hulk .left p {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Marvel', sans-serif;
+    margin-top: 15px;
+    line-height: 43px;
+}
+#hulk .right p {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Marvel', sans-serif;
+    margin-top: 15px;
+    line-height: 43px;
+    text-align: center;
+}
+
+#hulk .left {
+    width: 60%;
+    position: absolute;
+    left: 60px;
+    animation-duration: 1.3s;
+}
+
+#hulk .right {
+    position: absolute;
+    width: 440px;
+    top: 50px;
+    right: 80px;
+    animation-duration: 1.3s;
+}
+
+#hulk .right img {
+    width: 100%;
+    border-radius: 1.25rem;
+    position: absolute;
+    top: 0;
+}
+
+#hulk button {
+    margin-left: 20px;
+    margin-top: 150px;
+}
+
+#hulk::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 95%;
+    height: 1px;
+    background-color: #888;
+    left: 2.5%;
+}
+
+#hulk::before {
+    bottom: 30px;
+}
+
+
+/* Black Widow ***************************************************************************************************************** */
+#blackwidow {
+    position: relative;
+    overflow: hidden;
+    translate: 0.1s;
+}
+
+#blackwidow h1 {
+    color: #fff;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 50px;
+    margin-right: 30px;
+    text-align: end;
+}
+
+#blackwidow .right p {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Marvel', sans-serif;
+    margin-top: 15px;
+    line-height: 43px;
+    text-align: end;
+}
+#blackwidow .left p {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Marvel', sans-serif;
+    margin-top: 15px;
+    line-height: 43px;
+    text-align: center;
+}
+
+#blackwidow .right {
+    width: 60%;
+    position: absolute;
+    right: 60px;
+    animation-duration: 1.3s;
+}
+
+#blackwidow .left {
+    position: absolute;
+    width: 440px;
+    top: 50px;
+    left: 80px;
+    animation-duration: 1.3s;
+}
+
+#blackwidow .left img {
+    width: 100%;
+    border-radius: 1.25rem;
+    position: absolute;
+    top: 0;
+}
+
+#blackwidow button {
+    margin-left: 700px;
+    margin-top: 150px;
+}
+
+#blackwidow::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 95%;
+    height: 1px;
+    background-color: #888;
+    left: 2.5%;
+}
+
+#blackwidow::before {
+    bottom: 30px;
+}
+
+
+/* HAWKEYE***************************************************************************************************************** */
+#hawkeye {
+    position: relative;
+    overflow: hidden;
+    transition: 0.1s;
+}
+
+#hawkeye h1 {
+    color: #fff;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 50px;
+}
+
+#hawkeye .left p {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Marvel', sans-serif;
+    margin-top: 15px;
+    line-height: 43px;
+}
+#hawkeye .right p {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Marvel', sans-serif;
+    margin-top: 15px;
+    line-height: 43px;
+    text-align: center;
+}
+#hawkeye .left {
+    width: 60%;
+    position: absolute;
+    left: 60px;
+    animation-duration: 1.3s;
+}
+
+#hawkeye .right {
+    position: absolute;
+    width: 440px;
+    top: 50px;
+    right: 80px;
+
+    animation-duration: 1.3s;
+}
+
+#hawkeye .right img {
+    width: 100%;
+    border-radius: 1.25rem;
+    position: absolute;
+    top: 0;
+}
+
+#hawkeye button {
+    margin-left: 20px;
+    margin-top: 150px;
+}
+
+/* ANIMATION***************************************************************************************************************** */
+
+@keyframes l {
+    from {
+        left: -930px;
+    }
+
+    to {
+        left: 60px;
+    }
+}
+
+@keyframes r {
+    from {
+        right: -450px;
+    }
+
+    to {
+        right: 80px;
+    }
+}
+
+@keyframes ll {
+    from {
+        left: -450px;
+    }
+
+    to {
+        left: 80px;
+    }
+}
+
+@keyframes rr {
+    from {
+        right: -930px;
+    }
+
+    to {
+        right: 60px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.top {
+    background-color: gold;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: 5;
+    border-radius: 100%;
+    padding: 10px;
+    position: fixed;
+    display: none;
+}
+
+.top img {
+    width: 30px;
+    rotate: 60deg;
+}
+
+/* Leals***************************************************************************************************************** */
+
+.foot::before, .foot::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 33%;
+    height: 1px;
+    background-color: rgb(243, 243, 98);
+    top: calc(50% - 1px);
+}
+.foot::before{
+    left: 30px;
+}
+.foot::after{
+    right: 30px;
+}
+
+.foot span:hover + div, .l:hover{
+    width: 115px;
+}
+.foot span:hover + div a, .l:hover .l a{
+    margin-left: 40px;
+}
+.foot span{
+    cursor: default;
+}
+
+/* SCROLL***************************************************************************************************************** */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #F90;
+    background-image: -webkit-linear-gradient(90deg,
+            rgba(255, 255, 255, .2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, .2) 50%,
+            rgba(255, 255, 255, .2) 75%,
+            transparent 75%,
+            transparent)
+}

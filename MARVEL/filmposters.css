@@ -1,0 +1,77 @@
+#avengers .filmposters {
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    margin-top: 50px;
+    display: none;
+}
+
+#avengers .left img {
+    width: 23%;
+}
+
+#ironman .filmposters {
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    display: none;
+}
+
+#ironman .right img {
+    width: 25%;
+}
+
+#captainamerica .filmposters {
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    display: none;
+}
+
+#captainamerica .left img {
+    width: 23%;
+}
+
+#thor .filmposters {
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    display: none;
+}
+
+#thor .right img {
+    width: 23%;
+}
+
+#hulk .filmposters {
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    display: none;
+}
+
+#hulk .left img {
+    width: 25%;
+}
+
+#blackwidow .filmposters {
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    display: none;
+}
+
+#blackwidow .right img {
+    width: 30%;
+}
+
+#hawkeye .filmposters {
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    display: none;
+}
+
+#hawkeye .left img {
+    width: 30%;
+}

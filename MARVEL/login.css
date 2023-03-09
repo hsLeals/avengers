@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .sign_page, .log_page {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    display: none;
+  }
+  .form {
+    position: relative;
+    top: 100px;
+    left: calc(50% - 225px);
+    width: 450px;
+    padding: 50px 0;
+    background: rgba(45, 44, 44, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    text-align: center;
+  }
+  
+  .form p {
+    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+  
+  .form button {
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    width: 100px;
+    height: 40px;
+    border-radius: 3cm;
+    font-size: 17px;
+    color: white;
+    background: rgba(255, 255, 255, 0.39);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.8px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+  }
+  
+  ::placeholder{
+    color: rgba(255, 255, 255, 0.575);
+  }
+  
+  .form input {
+    width: 80%;
+    height: 50px;
+    display: block;
+    margin: auto;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 3cm;
+    padding-left: 20px;
+    background: rgba(255, 255, 255, 0.39);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.8px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    caret-color: white;
+    color: white;
+  }
+  .form a {
+    text-decoration: none;
+    display: block;
+    margin-top: 50px;
+    font-size: 20px;
+    color: white;
+  }
+  .sign_page i{
+    position: absolute;
+    bottom: 155px;
+    right: 70px;
+  }
+  .log_page i{
+    position: absolute;
+    bottom: 228px;
+    right: 70px;
+  }

@@ -1,0 +1,64 @@
+@media(max-width: 1450px) {
+    #avengers
+    {
+        height: 900px !important;
+    }
+
+    #captainamerica, #thor, #hulk, #blackwidow {
+        height: 800px !important;
+    }
+
+    #ironman {
+        height: 750px !important;
+    }
+
+    #hawkeye {
+        height: 770px !important;
+    }
+ 
+}
+
+
+@media(max-width: 460px) {
+    #avengers
+    {
+        height: 700px !important;
+    }
+
+    #captainamerica {
+        height: 650px !important;
+    }
+
+    #ironman {
+        height: 600px !important;
+    }
+
+    #blackwidow {
+        height: 620px !important;
+    }
+
+    #blackwidow::before {
+        top: 550px !important;
+    }
+
+    #hulk {
+        height: 610px !important
+    }
+
+    #hulk::before {
+        top: 600px !important;
+    }
+
+    #hawkeye {
+        height: 550px !important;
+    }
+
+    #thor {
+        height: 550px !important
+    }   
+
+    #thor:before {
+        top: 530px !important;
+    }
+
+}
